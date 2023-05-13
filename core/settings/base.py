@@ -7,7 +7,7 @@ SECRET_KEY = "3xk*)i0x#k$btl=(6q)te!19=mp6d)lm1+zl#ts4ewxi3-!vm_"
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["yourdomain.com", "127.0.0.1", "localhost"]
+ALLOWED_HOSTS = [".vercel.app"]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -29,7 +29,6 @@ MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
-    "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
