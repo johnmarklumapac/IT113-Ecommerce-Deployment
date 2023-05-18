@@ -1,13 +1,15 @@
 import os
 from pathlib import Path
 
+import dj_database_url
+
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 SECRET_KEY = "3xk*)i0x#k$btl=(6q)te!19=mp6d)lm1+zl#ts4ewxi3-!vm_"
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [".vercel.app", "/", "127.0.0.1"]
+ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -57,11 +59,8 @@ TEMPLATES = [
 WSGI_APPLICATION = "core.wsgi.application"
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    "default": dj_database_url.parse('postgres://admin:apUsCUo9p8tinCA1Dq4h6JaTa4irylIb@dpg-chiql5l269v2e2bc11cg-a.singapore-postgres.render.com/it114_project_deployment')
     }
-}
 
 AUTH_PASSWORD_VALIDATORS = [
     {
