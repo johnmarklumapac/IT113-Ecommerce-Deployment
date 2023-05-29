@@ -61,8 +61,28 @@ TEMPLATES = [
 WSGI_APPLICATION = "core.wsgi.application"
 
 DATABASES = {
-    "default": dj_database_url.parse('postgres://admin:apUsCUo9p8tinCA1Dq4h6JaTa4irylIb@dpg-chiql5l269v2e2bc11cg-a.singapore-postgres.render.com/it114_project_deployment')
+
+    'default': {
+
+        'ENGINE': 'django.db.backends.postgresql',
+
+        'NAME': 'postgres',
+
+        'USER': 'postgres',
+
+        'PASSWORD': 'admin',
+
+        'HOST': 'localhost',
+
+        'PORT': '5432',
+
     }
+
+}
+
+# DATABASES = {
+#     "default": dj_database_url.parse('postgres://admin:apUsCUo9p8tinCA1Dq4h6JaTa4irylIb@dpg-chiql5l269v2e2bc11cg-a.singapore-postgres.render.com/it114_project_deployment')
+#     }
 
 AUTH_PASSWORD_VALIDATORS = [
     {
