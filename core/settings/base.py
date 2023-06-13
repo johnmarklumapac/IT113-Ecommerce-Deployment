@@ -80,24 +80,24 @@ DATABASES = {
 
 }
 
-# DATABASES = {
-#     "default": dj_database_url.parse('postgres://admin:apUsCUo9p8tinCA1Dq4h6JaTa4irylIb@dpg-chiql5l269v2e2bc11cg-a.singapore-postgres.render.com/it114_project_deployment')
-#     }
+DATABASES = {
+    "default": dj_database_url.parse('postgres://admin:apUsCUo9p8tinCA1Dq4h6JaTa4irylIb@dpg-chiql5l269v2e2bc11cg-a.singapore-postgres.render.com/it114_project_deployment')
+    }
 
-AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
-    },
-]
+# AUTH_PASSWORD_VALIDATORS = [
+#     {
+#         "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
+#     },
+#     {
+#         "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
+#     },
+#     {
+#         "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
+#     },
+#     {
+#         "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
+#     },
+# ]
 
 LANGUAGE_CODE = "en-us"
 
